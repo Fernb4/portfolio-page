@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brightney Fernando – Portfolio</title>
+  <meta name="description" content="Portfolio von Brightney Fernando – Studentin Digital Business &amp; AI an der BFH.">
+
+  <!-- Schriften: Cormorant Garamond (Überschriften) und Atkinson Hyperlegible (Fliesstext, gut lesbar bei Sehschwäche) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&display=swap">
+
+  <!-- Eigene Styles, nach Aufgabe getrennt -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!-- JavaScript als ES-Modul (wird automatisch nach dem HTML ausgeführt) -->
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <!-- Sprunglink: Tastatur- und Screenreader-Nutzende springen direkt zum Inhalt -->
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="#top" aria-label="Brightney Fernando – zum Seitenanfang">B<span>F</span></a>
+
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <ul class="site-nav__list">
+          <li><a href="#about">Über mich</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#goddesses">Göttinnen</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="hero__eyebrow">Digital Business &amp; AI · BFH</p>
+        <h1 class="hero__title" id="hero-title">
+          Brightney <span class="hero__accent">Fernando</span>
+        </h1>
+        <p class="hero__slogan" lang="en">Where myth meets machine.</p>
+        <p class="hero__intro">
+          Ich verbinde meine Neugier für Daten und Technik mit einem Faible für alte Geschichten –
+          und baue Schritt für Schritt meinen Weg in die digitale Welt.
+        </p>
+        <a class="button" href="#contact">Kontakt aufnehmen</a>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section__title" id="about-title">Über mich</h2>
+        <p>
+          Ich studiere Teilzeit <strong>Digital Business &amp; AI</strong> an der Berner Fachhochschule
+          und bin im 5. Semester. Geboren bin ich in Bern, meine Wurzeln liegen in Sri Lanka.
+        </p>
+        <p>
+          Seit zwei Jahren arbeite ich zu 50 % an der gibb Berufsfachschule Bern – vor allem in der
+          Administration und am Schalter. Jetzt suche ich eine neue Stelle, in der ich mehr mit
+          <strong>Technik und Daten</strong> arbeiten kann.
+        </p>
+        <p>
+          Abseits vom Studium faszinieren mich Mythen und griechische Göttinnen, Kalligraphie,
+          Mode und Technik. Und ich bin überzeugte Feministin.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section__title" id="projects-title">Projekte</h2>
+        <p>Dieser Bereich wird in den nächsten Etappen gefüllt.</p>
+      </div>
+    </section>
+
+    <section class="section" id="goddesses" aria-labelledby="goddesses-title">
+      <div class="container">
+        <h2 class="section__title" id="goddesses-title">Göttinnen-Galerie</h2>
+        <p>Hier entsteht eine Galerie griechischer Göttinnen mit Daten aus Wikipedia.</p>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section__title" id="skills-title">Skills</h2>
+        <p>Folgt in einer späteren Etappe.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section__title" id="contact-title">Kontakt</h2>
+        <p>Hier entsteht ein Kontaktformular.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span data-year></span> Brightney Fernando</p>
+    </div>
+  </footer>
+</body>
+</html>
