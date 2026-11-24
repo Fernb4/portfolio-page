@@ -1,0 +1,58 @@
+/* ==========================================================
+   Design-Tokens
+   Alle Farben, Schriften und Abstände an einem Ort.
+   Wer das Design ändern will, ändert nur diese Datei.
+   ========================================================== */
+
+:root {
+  /* --- Farben: Hellmodus --- */
+  --color-bg:          #f7f5fc;  /* sehr helles Lavendel */
+  --color-surface:     #ffffff;
+  --color-text:        #1e1a33;  /* fast schwarz mit Violettstich */
+  --color-text-muted:  #4f4868;
+  --color-primary:     #4b3fa8;  /* kühles Violett – Grundfarbe */
+  --color-primary-soft:#e6e2f8;
+  --color-accent:      #e8a33d;  /* Safran – der bewusste Farbbruch */
+  --color-accent-text: #1e1a33;  /* Text auf Safran-Flächen */
+  --color-border:      #d9d4ec;
+  --color-focus:       #e8a33d;
+
+  /* --- Schriften --- */
+  --font-heading: "Cormorant Garamond", Georgia, serif;
+  --font-body:    "Atkinson Hyperlegible", system-ui, sans-serif;
+
+  /* Schriftgrössen wachsen fliessend mit der Bildschirmbreite (clamp = min, ideal, max) */
+  --text-sm:   0.9rem;
+  --text-base: 1.0625rem;
+  --text-lg:   clamp(1.15rem, 1rem + 0.5vw, 1.35rem);
+  --text-xl:   clamp(1.75rem, 1.3rem + 2vw, 2.75rem);
+  --text-2xl:  clamp(2.75rem, 1.8rem + 5vw, 5.5rem);
+
+  /* --- Abstände --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  --space-xl: clamp(4rem, 3rem + 5vw, 7rem);
+
+  /* --- Sonstiges --- */
+  --radius:        0.75rem;
+  --container-max: 70rem;
+  --header-height: 4.5rem;
+}
+
+/* --- Farben: Dunkelmodus (folgt vorerst der Systemeinstellung) --- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:          #15122a;
+    --color-surface:     #1f1b3a;
+    --color-text:        #ece8fa;
+    --color-text-muted:  #b9b2d6;
+    --color-primary:     #b7aef5;
+    --color-primary-soft:#2c2652;
+    --color-accent:      #f2b65a;
+    --color-accent-text: #15122a;
+    --color-border:      #3a3363;
+    --color-focus:       #f2b65a;
+  }
+}
